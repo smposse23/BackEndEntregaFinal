@@ -1,0 +1,74 @@
+[2023-01-28T14:35:30.543] [ERROR] default - Hubo un error conectandose a la base MongooseError: The `uri` parameter to `openUri()` must be a string, got "object". Make sure the first parameter to `mongoose.connect()` or `mongoose.createConnection()` is a string.
+[2023-01-28T14:35:45.224] [ERROR] default - Hubo un error conectandose a la base MongooseError: The `uri` parameter to `openUri()` must be a string, got "object". Make sure the first parameter to `mongoose.connect()` or `mongoose.createConnection()` is a string.
+[2023-01-28T14:36:41.742] [ERROR] default - Hubo un error conectandose a la base MongooseError: The `uri` parameter to `openUri()` must be a string, got "object". Make sure the first parameter to `mongoose.connect()` or `mongoose.createConnection()` is a string.
+[2023-01-31T17:31:34.079] [ERROR] default - No se encontró el usuario con el username mgposse@gmail.com
+[2023-02-07T20:41:30.714] [ERROR] default - Se produjo el error MongooseError: The `uri` parameter to `openUri()` must be a string, got "undefined". Make sure the first parameter to `mongoose.connect()` or `mongoose.createConnection()` is a string.
+[2023-02-07T20:41:30.720] [ERROR] default - Se produjo el error MongooseError: The `uri` parameter to `openUri()` must be a string, got "undefined". Make sure the first parameter to `mongoose.connect()` or `mongoose.createConnection()` is a string.
+[2023-02-07T20:41:30.726] [ERROR] default - Se produjo el error MongooseError: The `uri` parameter to `openUri()` must be a string, got "undefined". Make sure the first parameter to `mongoose.connect()` or `mongoose.createConnection()` is a string.
+[2023-02-07T20:41:49.979] [ERROR] default - Se produjo el error MongooseError: The `uri` parameter to `openUri()` must be a string, got "undefined". Make sure the first parameter to `mongoose.connect()` or `mongoose.createConnection()` is a string.
+[2023-02-07T20:41:49.982] [ERROR] default - Se produjo el error MongooseError: The `uri` parameter to `openUri()` must be a string, got "undefined". Make sure the first parameter to `mongoose.connect()` or `mongoose.createConnection()` is a string.
+[2023-02-07T20:41:49.988] [ERROR] default - Se produjo el error MongooseError: The `uri` parameter to `openUri()` must be a string, got "undefined". Make sure the first parameter to `mongoose.connect()` or `mongoose.createConnection()` is a string.
+[2023-02-07T21:52:55.764] [ERROR] default - Error al consultar los usuarios ReferenceError: data is not defined
+[2023-02-14T18:18:17.807] [ERROR] default - Error al buscar los usuarios ReferenceError: json is not defined
+[2023-02-18T11:35:16.902] [ERROR] default - Error al eliminar todos los productos ReferenceError: ProductManager is not defined
+[2023-02-18T11:36:26.382] [ERROR] default - Error al eliminar todos los productos ReferenceError: result is not defined
+[2023-02-18T11:46:21.314] [ERROR] default - Error al eliminar todos los productos ReferenceError: result is not defined
+[2023-02-18T11:48:21.747] [ERROR] default - Error al eliminar todos los productos ReferenceError: result is not defined
+[2023-02-18T11:49:10.474] [ERROR] default - Error al eliminar todos los productos Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+[2023-02-18T11:51:00.349] [ERROR] default - Error al eliminar todos los productos Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+[2023-02-18T11:51:35.461] [ERROR] default - Error al eliminar todos los productos Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+[2023-02-18T11:54:48.127] [ERROR] default - Error al eliminar todos los productos Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+[2023-02-18T11:57:03.089] [ERROR] default - Error al eliminar todos los productos Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+[2023-02-18T11:57:03.354] [ERROR] default - Error al eliminar producto Error: Error al borrar: no se encontró el id 63
+[2023-02-18T11:58:12.855] [ERROR] default - Error al eliminar todos los productos Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+[2023-02-18T11:58:13.124] [ERROR] default - Error al eliminar producto Error: Error al borrar: no se encontró el id 63
+[2023-02-18T11:59:42.281] [ERROR] default - Error al eliminar todos los productos Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+[2023-02-18T11:59:42.566] [ERROR] default - Error al eliminar producto Error: Error al borrar: no se encontró el id 63
+[2023-02-18T12:02:19.165] [ERROR] default - Error al eliminar todos los productos Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+[2023-02-18T12:02:19.493] [ERROR] default - Error al eliminar producto Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+[2023-02-18T12:03:04.349] [ERROR] default - Error al eliminar todos los productos Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+[2023-02-18T12:03:04.671] [ERROR] default - Error al eliminar producto Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+[2023-03-15T17:52:32.092] [ERROR] default - Error al cargar los productos Error: No default engine was specified and no extension was provided.
+[2023-03-15T17:53:22.649] [ERROR] default - Error al cargar los productos Error: No default engine was specified and no extension was provided.
+[2023-03-15T17:53:24.794] [ERROR] default - Error al cargar los productos Error: No default engine was specified and no extension was provided.
+[2023-03-15T17:53:25.481] [ERROR] default - Error al cargar los productos Error: No default engine was specified and no extension was provided.
+[2023-03-15T17:53:26.081] [ERROR] default - Error al cargar los productos Error: No default engine was specified and no extension was provided.
+[2023-03-15T17:54:05.750] [ERROR] default - Error al cargar los productos Error: No default engine was specified and no extension was provided.
+[2023-03-15T17:58:14.335] [ERROR] default - Error al cargar los productos Error: No default engine was specified and no extension was provided.
+[2023-03-15T17:58:16.434] [ERROR] default - Error al cargar los productos Error: No default engine was specified and no extension was provided.
+[2023-03-15T17:58:16.865] [ERROR] default - Error al cargar los productos Error: No default engine was specified and no extension was provided.
+[2023-03-15T17:58:17.057] [ERROR] default - Error al cargar los productos Error: No default engine was specified and no extension was provided.
+[2023-03-15T17:58:17.249] [ERROR] default - Error al cargar los productos Error: No default engine was specified and no extension was provided.
+[2023-03-15T17:58:17.449] [ERROR] default - Error al cargar los productos Error: No default engine was specified and no extension was provided.
+[2023-03-15T17:58:17.619] [ERROR] default - Error al cargar los productos Error: No default engine was specified and no extension was provided.
+[2023-03-15T17:58:17.802] [ERROR] default - Error al cargar los productos Error: No default engine was specified and no extension was provided.
+[2023-03-15T17:58:17.992] [ERROR] default - Error al cargar los productos Error: No default engine was specified and no extension was provided.
+[2023-03-15T17:58:18.176] [ERROR] default - Error al cargar los productos Error: No default engine was specified and no extension was provided.
+[2023-03-15T17:58:18.369] [ERROR] default - Error al cargar los productos Error: No default engine was specified and no extension was provided.
+[2023-03-15T17:58:18.555] [ERROR] default - Error al cargar los productos Error: No default engine was specified and no extension was provided.
+[2023-03-15T17:58:18.719] [ERROR] default - Error al cargar los productos Error: No default engine was specified and no extension was provided.
+[2023-03-15T18:35:19.938] [ERROR] default - Error al cargar los productos TypeError: Cannot read properties of undefined (reading 'json')
+[2023-03-31T18:35:46.798] [ERROR] default - Error al actualizar producto Error: Error: Error al actualizar: no se encontró el id 642751878
+[2023-03-31T18:37:29.058] [ERROR] default - Error al actualizar producto Error: Error: Error al actualizar: no se encontró el id 642751878
+[2023-03-31T18:42:16.764] [ERROR] default - Error al eliminar producto Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+[2023-03-31T18:43:32.835] [ERROR] default - Error al eliminar todos los productos Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+[2023-03-31T21:28:51.962] [ERROR] default - Error: Error: Hubo un error CastError: Cast to ObjectId failed for value "642773" (type number) at path "_id" for model "carritos"
+    at getOneCart (file:///C:/Users/smpos/OneDrive/Escritorio/BackEndEntregaFinal/src/services/cartServices.js:26:11)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async getProductsofCartController (file:///C:/Users/smpos/OneDrive/Escritorio/BackEndEntregaFinal/src/controllers/cartController.js:53:29)
+[2023-03-31T21:48:55.776] [ERROR] default - Error al guardar producto en el carrito TypeError: Cannot read properties of undefined (reading 'products')
+[2023-03-31T21:50:39.435] [ERROR] default - Error al guardar producto en el carrito TypeError: Cannot read properties of undefined (reading 'products')
+[2023-03-31T21:55:25.953] [ERROR] default - Error al guardar producto en el carrito TypeError: Cannot read properties of undefined (reading 'products')
+[2023-03-31T21:57:07.601] [ERROR] default - Error al guardar producto en el carrito TypeError: Cannot read properties of undefined (reading 'id')
+[2023-03-31T21:57:48.608] [ERROR] default - Error al guardar producto en el carrito Error: Error: Hubo un error CastError: Cast to ObjectId failed for value "{ id: '642773f9b055c7734b36ea9c' }" (type Object) at path "_id" for model "carritos"
+[2023-03-31T22:24:32.871] [ERROR] default - Error al actualizar producto TypeError: Cannot read properties of undefined (reading 'push')
+[2023-03-31T22:27:59.819] [ERROR] default - Error al actualizar producto ReferenceError: result is not defined
+[2023-03-31T22:29:13.333] [ERROR] default - Error al actualizar producto ReferenceError: result is not defined
+[2023-03-31T22:45:00.987] [ERROR] default - Error al guardar producto en el carrito TypeError: Cannot read properties of undefined (reading 'products')
+[2023-03-31T22:45:51.102] [ERROR] default - Error al guardar producto en el carrito TypeError: Cannot read properties of undefined (reading 'products')
+[2023-03-31T22:46:38.021] [ERROR] default - Error al guardar producto en el carrito TypeError: Cannot read properties of undefined (reading 'products')
+[2023-03-31T22:46:49.481] [ERROR] default - Error al guardar producto en el carrito TypeError: Cannot read properties of undefined (reading 'id')
+[2023-03-31T23:15:21.433] [ERROR] default - Error al eliminar todos los carritos Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+[2023-03-31T23:19:46.225] [ERROR] default - Error al eliminar el producto TypeError: Cannot read properties of undefined (reading 'products')
+[2023-04-01T08:22:00.038] [ERROR] default - Hubo un error Error: Authenticate

@@ -1,0 +1,28 @@
+<div class="m-5">
+  {{#if user}}
+    <h2 class="text-success">Usuarios</h2>
+    <table class="table table-bordered">
+      <thead class="table-dark">
+        <tr>
+          <th scope="col">Email</th>
+          <th scope="col">Nombre</th>
+          <th scope="col">Edad</th>
+        </tr>
+      </thead>
+      <tbody>
+        {{#each user}}
+          <tr>
+            <td>{{this.email}}</td>
+            <td>{{this.nombre}}</td>
+            <td>{{this.edad}}</td>
+          </tr>
+        {{/each}}
+      </tbody>
+    </table>
+  {{else}}
+    <div>
+      <p class="empty-list">No hay usuarios</p>
+    </div>
+  {{/if}}
+</div>
+{{> scripts}}
