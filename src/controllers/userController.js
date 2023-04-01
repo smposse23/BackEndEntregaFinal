@@ -1,6 +1,7 @@
 import { logger } from "../logger.js";
 import {
   getUsers,
+  getOneUser,
   saveUser,
   updateUser,
   deleteUser,
@@ -14,6 +15,16 @@ export const getUsersController = async (req, res) => {
   } catch (error) {
     logger.error(`Error al buscar los usuarios ${error}`);
     res.status(400).json({ message: `Hubo un error ${error}` });
+  }
+};
+
+export const getOneUserController = async (req, res) => {
+  try {
+    const user = await getOneUser(req.params.id);
+    res.status(200).json({ User: user });
+  } catch (error) {
+    logger.error(`Error al buscar el usuario ${error}`);
+    res.status(400).json({ message: `Error al buscar el usuario ${error}` });
   }
 };
 

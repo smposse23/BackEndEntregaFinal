@@ -41,8 +41,8 @@ app.use(
 app.use(passport.initialize()); //conectamos a passport con express.
 app.use(passport.session()); //vinculacion entre passport y las sesiones de nuestros usuarios.
 
-const PORT = process.env.PORT || objArguments.PORT;
-const MODO = process.env.MODE || objArguments.MODE;
+const PORT = objArguments.PORT || process.env.PORT;
+const MODO = process.env.MODE;
 const ENV = process.env.NODE_ENV;
 
 // lógica Modos Fork y Cluster
@@ -61,7 +61,7 @@ if (MODO == "CLUSTER" && cluster.isPrimary) {
   //servidor de express
   const server = app.listen(PORT, () =>
     logger.info(
-      `listening on port ${PORT} on process ${process.pid} in env ${ENV} with mode ${MODO}`
+      `listening on port ${PORT} on process ${process.pid} in env ${ENV}`
     )
   );
 }

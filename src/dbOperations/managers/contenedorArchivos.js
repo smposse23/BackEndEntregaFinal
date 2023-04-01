@@ -1,14 +1,14 @@
 import fs from "fs";
 import path from "path";
 import { fileURLToPath } from "url";
-import { logger } from "../logger";
+import { logger } from "../../logger.js";
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
 class ContenedorArchivos {
   constructor(nameFile) {
-    this.nameFile = path.join(__dirname, `../files/${nameFile}`);
+    this.nameFile = path.join(__dirname, `../../files/${nameFile}`);
   }
   getAll = async () => {
     try {

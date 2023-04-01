@@ -6,13 +6,6 @@ import { UserModel } from "../../dbOperations/models/userModel.js";
 import { logger } from "../../logger.js";
 import { checkLogin } from "../../middlewares/checkLogin.js";
 import { transporterEmail, mailAdmin } from "../../messages/email.js";
-import {
-  twilioAdminPhone,
-  client,
-  twillioWapp,
-  AdminTel,
-  AdminWapp,
-} from "../../messages/twilio.js";
 import compression from "compression";
 import * as UserController from "../../controllers/userController.js";
 
@@ -147,6 +140,8 @@ const authRouter = express.Router();
 
 authRouter.get("/users", UserController.getUsersController);
 
+authRouter.get("/user/:id", UserController.getOneUserController);
+
 authRouter.put("/user/:id", UserController.updateUserController);
 
 authRouter.delete("/user/:id", UserController.deleteUserController);
@@ -178,7 +173,6 @@ authRouter.post(
   passport.authenticate("loginStrategy"),
   (req, res) => {
     logger.info("Login exitoso");
-    console.log(req.user);
     res.json(`Login exitoso ${req.user}`);
   }
 );
@@ -192,35 +186,6 @@ authRouter.post("/logout", (req, res) => {
     logger.info("Sesión finalizada");
     res.json(`Sesión finalizada`);
   });
-});
-
-authRouter.post("/twilio-sms", async (req, res) => {
-  try {
-    // utilizamos el cliente para enviar un mensaje
-    const response = await client.messages.create({
-      body: "Hola. Envío de Mensaje desde NodeJs utilizando Twilio",
-      from: twilioAdminPhone, // número desde donde sale el mensaje
-      to: AdminTel, // destinatario - Santiago Posse
-    });
-    res.send(`El mensaje fue enviado ${response}`);
-  } catch (error) {
-    logger.error(`Hubo un error ${error}`);
-  }
-});
-
-// Twilio - Whatsapp
-authRouter.post("/twilio-whatsapp", async (req, res) => {
-  try {
-    // utilizamos el cliente para enviar un mensaje
-    const response = await client.messages.create({
-      body: "Hola. Envío de Mensaje desde NodeJs utilizando Twilio",
-      from: twillioWapp, // número desde donde sale el mensaje
-      to: AdminWapp, // destinatario - Santiago Posse
-    });
-    res.send(`El mensaje fue enviado ${response}`);
-  } catch (error) {
-    logger.error(`Hubo un error ${error}`);
-  }
 });
 
 export { authRouter };

@@ -4,7 +4,7 @@ import dotenv from "dotenv";
 import ParsedArgs from "minimist";
 // Minimist
 const optionsMinimist = {
-  default: { p: 8080, m: "FORK", e: "development" },
+  default: { m: "FORK", e: "production" },
   alias: { p: "PORT", m: "MODE", e: "ENV" },
 };
 export const objArguments = ParsedArgs(process.argv.slice(2), optionsMinimist);

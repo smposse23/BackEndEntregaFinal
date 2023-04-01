@@ -27,24 +27,24 @@ export async function getApiDao(DBTYPE) {
         "./daos/users/userArchivosDao.js"
       );
       CartDaoContainer = new CartArchivosDao("carritos");
-      MessagesDaoContainer = new MessagesArchivosDao("archivos");
+      MessagesDaoContainer = new MessagesArchivosDao("messages");
       ProductsDaoContainer = new ProductsArchivosDao("productos");
       UsersDaoContainer = new UserArchivosDao("usuarios");
       break;
     case "sql":
-      const { CartSqlDao } = await import("./daos/carts/cartSqlDao.js");
-      const { MessagesSqlDao } = await import(
+      const { CartSQLDao } = await import("./daos/carts/cartSqlDao.js");
+      const { MessagesSQLDao } = await import(
         "./daos/messages/messagesSqlDao.js"
       );
-      const { ProductsSqlDao } = await import(
+      const { ProductosDaoSQL } = await import(
         "./daos/products/productsSqlDao.js"
       );
-      const { UserSqlDao } = await import("./daos/users/userSqlDao.js");
+      const { UserSQLDao } = await import("./daos/users/userSqlDao.js");
       // Conectamos a la base de datos de MySql
-      CartDaoContainer = new CartSqlDao(options.sqliteDb, "carritos");
-      MessagesDaoContainer = new MessagesSqlDao(options.sqliteDb, "messages");
-      ProductsDaoContainer = new ProductsSqlDao(options.sqliteDb, "productos");
-      UsersDaoContainer = new UserSqlDao(options.sqliteDb, "usuarios");
+      CartDaoContainer = new CartSQLDao(options.sqliteDb, "carritos");
+      MessagesDaoContainer = new MessagesSQLDao(options.sqliteDb, "messages");
+      ProductsDaoContainer = new ProductosDaoSQL(options.sqliteDb, "productos");
+      UsersDaoContainer = new UserSQLDao(options.sqliteDb, "usuarios");
       break;
     case "mongo":
       const { CartMongoDao } = await import("./daos/carts/cartMongoDao.js");

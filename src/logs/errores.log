@@ -72,3 +72,34 @@
 [2023-03-31T23:15:21.433] [ERROR] default - Error al eliminar todos los carritos Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
 [2023-03-31T23:19:46.225] [ERROR] default - Error al eliminar el producto TypeError: Cannot read properties of undefined (reading 'products')
 [2023-04-01T08:22:00.038] [ERROR] default - Hubo un error Error: Authenticate
+[2023-04-01T11:28:25.306] [ERROR] default - Error al buscar el usuario Error: ReferenceError: newData is not defined
+[2023-04-01T12:17:23.851] [ERROR] default - [Error: ENOENT: no such file or directory, open 'C:\Users\smpos\OneDrive\Escritorio\smposse23EntregaFinalBackEnd\src\dbOperations\files\productos'] {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\Users\\smpos\\OneDrive\\Escritorio\\smposse23EntregaFinalBackEnd\\src\\dbOperations\\files\\productos'
+}
+[2023-04-01T12:19:36.664] [ERROR] default - [Error: ENOENT: no such file or directory, open 'C:\Users\smpos\OneDrive\Escritorio\smposse23EntregaFinalBackEnd\src\files\productos'] {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\Users\\smpos\\OneDrive\\Escritorio\\smposse23EntregaFinalBackEnd\\src\\files\\productos'
+}
+[2023-04-01T12:26:22.153] [ERROR] default - [Error: ENOENT: no such file or directory, open 'C:\Users\smpos\OneDrive\Escritorio\smposse23EntregaFinalBackEnd\src\files\productos'] {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\Users\\smpos\\OneDrive\\Escritorio\\smposse23EntregaFinalBackEnd\\src\\files\\productos'
+}
+[2023-04-01T12:27:22.370] [ERROR] default - [Error: ENOENT: no such file or directory, open 'C:\Users\smpos\OneDrive\Escritorio\smposse23EntregaFinalBackEnd\src\files\usuarios'] {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\Users\\smpos\\OneDrive\\Escritorio\\smposse23EntregaFinalBackEnd\\src\\files\\usuarios'
+}
+[2023-04-01T12:27:22.373] [ERROR] default - Error al buscar los usuarios Error: TypeError: Cannot destructure property '_id' of 'undefined' as it is undefined.
+[2023-04-01T12:41:11.126] [ERROR] default - [Error: select * from `usuarios` - SQLITE_ERROR: no such table: usuarios] {
+  errno: 1,
+  code: 'SQLITE_ERROR'
+}
+[2023-04-01T12:41:11.128] [ERROR] default - Error al buscar los usuarios Error: TypeError: Cannot destructure property '_id' of 'undefined' as it is undefined.

@@ -1,13 +1,22 @@
 import { getApiDao } from "../dbOperations/index.js";
-import { options } from "../config/options.js";
 import { convertToDto } from "../dbOperations/dtos/userDto.js";
 import { UserValidation } from "../dbOperations/validations/userValidations.js";
 
-const { UsersDaoContainer } = await getApiDao(options.server.DBTYPE);
+const { UsersDaoContainer } = await getApiDao(process.env.DBTYPE);
 
 export const getUsers = async () => {
   try {
     const data = await UsersDaoContainer.getAll();
+    const response = convertToDto(data);
+    return response;
+  } catch (error) {
+    throw new Error(error);
+  }
+};
+
+export const getOneUser = async (id) => {
+  try {
+    const data = await UsersDaoContainer.getById(id);
     const response = convertToDto(data);
     return response;
   } catch (error) {

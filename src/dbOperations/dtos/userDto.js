@@ -1,6 +1,9 @@
 class UserDto {
-  constructor({ email, nombre, edad }) {
-    (this.nombre = nombre), (this.email = email), (this.edad = edad);
+  constructor({ _id, email, nombre, edad }) {
+    (this._id = _id),
+      (this.nombre = nombre),
+      (this.email = email),
+      (this.edad = edad);
   }
 }
 
@@ -10,6 +13,7 @@ export const convertToDto = (users) => {
     return newData;
   } else {
     const newData = new UserDto(users);
+    return newData;
   }
   return newData;
 };

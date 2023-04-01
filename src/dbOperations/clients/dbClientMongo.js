@@ -1,5 +1,4 @@
 import mongoose from "mongoose";
-import { options } from "../../config/options.js";
 import { logger } from "../../logger.js";
 
 // clase para conectarme a la base de datos
@@ -12,7 +11,7 @@ class MyMongoClient {
   async connect() {
     try {
       this.client.set("strictQuery", false);
-      await this.client.connect(options.mongo.url, {
+      await this.client.connect(process.env.MONGO_URL, {
         useNewUrlParser: true,
         useUnifiedTopology: true,
       });

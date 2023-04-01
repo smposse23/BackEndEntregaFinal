@@ -1,7 +1,6 @@
 import { getApiDao } from "../dbOperations/index.js";
-import { options } from "../config/options.js";
 
-const { ProductsDaoContainer } = await getApiDao(options.server.DBTYPE);
+const { ProductsDaoContainer } = await getApiDao(process.env.DBTYPE);
 
 export const getProducts = async () => {
   try {
