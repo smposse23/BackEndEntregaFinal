@@ -1,0 +1,3 @@
+// Usar la siguiente dirección de Render, y luego de /api/ colocar las rutas deseadas
+
+https://renderbackend-deploy-render.onrender.com/api/(rutas)
