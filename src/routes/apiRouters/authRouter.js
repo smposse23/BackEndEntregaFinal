@@ -4,10 +4,10 @@ import bcrypt from "bcrypt";
 import { Strategy as LocalStrategy } from "passport-local";
 import { UserModel } from "../../dbOperations/models/userModel.js";
 import { logger } from "../../logger.js";
-import { checkLogin } from "../../middlewares/checkLogin.js";
 import { transporterEmail, mailAdmin } from "../../messages/email.js";
 import compression from "compression";
 import * as UserController from "../../controllers/userController.js";
+import { checkAdminRole } from "../../middlewares/permissions.js";
 
 //serializar un usuario
 passport.serializeUser((user, done) => {
@@ -62,6 +62,7 @@ passport.use(
           edad: req.body.edad,
           telefono: req.body.telefono,
           fotoUrl: req.body.fotoUrl,
+          permission: req.body.permission,
         };
         const emailTemplate = `<div>
         <h1>Nuevo Registro</h1>
@@ -142,11 +143,23 @@ authRouter.get("/users", UserController.getUsersController);
 
 authRouter.get("/user/:id", UserController.getOneUserController);
 
-authRouter.put("/user/:id", UserController.updateUserController);
+authRouter.put(
+  "/user/:id",
+  checkAdminRole,
+  UserController.updateUserController
+);
 
-authRouter.delete("/user/:id", UserController.deleteUserController);
+authRouter.delete(
+  "/user/:id",
+  checkAdminRole,
+  UserController.deleteUserController
+);
 
-authRouter.delete("/users", UserController.deleteAllUsersController);
+authRouter.delete(
+  "/users",
+  checkAdminRole,
+  UserController.deleteAllUsersController
+);
 
 authRouter.get("/info", UserController.getInfoController);
 
@@ -173,7 +186,7 @@ authRouter.post(
   passport.authenticate("loginStrategy"),
   (req, res) => {
     logger.info("Login exitoso");
-    res.json(`Login exitoso ${req.user}`);
+    res.json(`Login exitoso - Bienvenido ${req.user.nombre}`);
   }
 );
 

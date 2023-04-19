@@ -7,15 +7,15 @@ const productCollection = "productos";
 const productSchema = new mongoose.Schema({
   title: {
     type: String,
-    require: true,
+    required: true,
   },
   price: {
     type: Number,
-    require: true,
+    required: true,
   },
   thumbnail: {
     type: String,
-    require: true,
+    required: true,
   },
 });
 

@@ -103,3 +103,57 @@
   code: 'SQLITE_ERROR'
 }
 [2023-04-01T12:41:11.128] [ERROR] default - Error al buscar los usuarios Error: TypeError: Cannot destructure property '_id' of 'undefined' as it is undefined.
+[2023-04-15T14:39:14.098] [ERROR] default - Error al eliminar producto Error: Error: Error al borrar: no se encontró el id 234234
+[2023-04-15T14:41:51.101] [ERROR] default - Error al eliminar producto Error: Error: Error al borrar: no se encontró el id 1234e6546
+[2023-04-15T14:42:52.692] [ERROR] default - Error al eliminar producto Error: Error: Error al borrar: no se encontró el id 1234e6546
+[2023-04-15T14:44:43.293] [ERROR] default - Error. No se puede eliminar el producto, ya que el mismo no existe.
+[2023-04-15T15:49:52.723] [ERROR] default - Error al eliminar todos los carritos Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+[2023-04-15T15:51:08.265] [ERROR] default - Error al crear nuevo carritoTypeError: Cannot read properties of undefined (reading 'id')
+[2023-04-15T19:42:12.776] [ERROR] default - Error al buscar el carrito Error: Error: Hubo un error CastError: Cast to ObjectId failed for value "enviar-pedido" (type string) at path "_id" for model "carritos"
+[2023-04-15T19:45:03.949] [ERROR] default - Error al buscar el carrito Error: Error: Hubo un error CastError: Cast to ObjectId failed for value "enviar-pedido" (type string) at path "_id" for model "carritos"
+[2023-04-15T19:46:09.928] [ERROR] default - Error al buscar el carrito Error: Error: Hubo un error CastError: Cast to ObjectId failed for value "productos" (type string) at path "_id" for model "carritos"
+[2023-04-15T19:47:58.695] [ERROR] default - Error al buscar el carrito Error: Error: Hubo un error CastError: Cast to ObjectId failed for value "enviar-pedido" (type string) at path "_id" for model "carritos"
+[2023-04-15T19:50:58.749] [ERROR] default - Error al buscar el carrito Error: Error: Hubo un error CastError: Cast to ObjectId failed for value "enviar-pedido" (type string) at path "_id" for model "carritos"
+[2023-04-15T19:51:32.605] [ERROR] default - Error al buscar el carrito Error: Error: Hubo un error CastError: Cast to ObjectId failed for value "enviar-pedido" (type string) at path "_id" for model "carritos"
+[2023-04-15T19:52:20.292] [ERROR] default - Error al buscar el carrito Error: Error: Hubo un error CastError: Cast to ObjectId failed for value "enviar-pedido" (type string) at path "_id" for model "carritos"
+[2023-04-15T19:57:50.834] [ERROR] default - Error al buscar el carrito Error: Error: Hubo un error CastError: Cast to ObjectId failed for value "enviar-pedido" (type string) at path "_id" for model "carritos"
+[2023-04-15T20:02:31.037] [ERROR] default - Error al buscar el carrito Error: Error: Hubo un error CastError: Cast to ObjectId failed for value "enviar-pedido" (type string) at path "_id" for model "carritos"
+[2023-04-15T20:15:56.921] [ERROR] default - Error al enviar el pedido
+[2023-04-15T20:17:34.254] [ERROR] default - Error al enviar el pedidoError: Hubo un error TypeError: Cannot read properties of undefined (reading 'model')
+[2023-04-15T20:22:45.273] [ERROR] default - Error al enviar el pedidoError: Hubo un error TypeError: Cannot read properties of undefined (reading 'model')
+[2023-04-15T20:28:15.317] [ERROR] default - Error al enviar el pedidoError: Hubo un error TypeError: Cannot read properties of undefined (reading 'model')
+[2023-04-15T20:36:05.872] [ERROR] default - Error al enviar el pedidoError: Hubo un error TypeError: Cannot read properties of undefined (reading 'model')
+[2023-04-15T20:40:37.932] [ERROR] default - Error al buscar el carrito Error: Error: Hubo un error CastError: Cast to ObjectId failed for value "cartByUser" (type string) at path "_id" for model "carritos"
+[2023-04-15T20:57:47.972] [ERROR] default - Error al enviar el pedidoReferenceError: getByUserId is not defined
+[2023-04-15T21:03:18.725] [ERROR] default - Error al enviar el pedidoReferenceError: userId is not defined
+[2023-04-15T21:06:22.345] [ERROR] default - Error al enviar el pedidoReferenceError: nombre is not defined
+[2023-04-17T13:46:58.000] [ERROR] default - Error al guardar producto en el carrito TypeError: Cannot read properties of null (reading 'error')
+[2023-04-17T13:49:05.922] [ERROR] default - Error al guardar producto en el carrito TypeError: Cannot read properties of null (reading 'error')
+[2023-04-17T13:59:12.603] [ERROR] default - Error al enviar el pedidoTypeError: Cannot read properties of undefined (reading 'products')
+[2023-04-17T14:01:41.547] [ERROR] default - Error al enviar el pedidoTypeError: Cannot read properties of undefined (reading 'products')
+[2023-04-17T14:13:35.933] [ERROR] default - Error al enviar el pedidoTypeError: Cannot read properties of undefined (reading 'products')
+[2023-04-17T14:15:04.120] [ERROR] default - Error al enviar el pedidoTypeError: Cannot read properties of undefined (reading 'products')
+[2023-04-17T14:28:32.837] [ERROR] default - Error al crear nuevo carritoTypeError: Cannot read properties of undefined (reading 'id')
+[2023-04-17T14:29:43.932] [ERROR] default - Error al enviar el pedidoError: Authenticate
+[2023-04-17T19:24:50.407] [ERROR] default - Se produjo el error MongoServerError: bad auth : Authentication failed.
+[2023-04-17T19:25:34.013] [ERROR] default - Se produjo el error MongoServerError: bad auth : Authentication failed.
+[2023-04-17T19:27:11.005] [ERROR] default - Se produjo el error MongoServerError: bad auth : Authentication failed.
+[2023-04-18T18:29:01.924] [ERROR] default - Error al buscar el carrito TypeError: Cannot read properties of undefined (reading 'id')
+[2023-04-18T18:29:07.937] [ERROR] default - Error al buscar el carrito TypeError: Cannot read properties of undefined (reading 'id')
+[2023-04-18T18:29:09.746] [ERROR] default - Error al buscar el carrito TypeError: Cannot read properties of undefined (reading 'id')
+[2023-04-18T18:29:10.097] [ERROR] default - Error al buscar el carrito TypeError: Cannot read properties of undefined (reading 'id')
+[2023-04-18T18:29:10.320] [ERROR] default - Error al buscar el carrito TypeError: Cannot read properties of undefined (reading 'id')
+[2023-04-18T18:29:10.514] [ERROR] default - Error al buscar el carrito TypeError: Cannot read properties of undefined (reading 'id')
+[2023-04-18T18:29:10.696] [ERROR] default - Error al buscar el carrito TypeError: Cannot read properties of undefined (reading 'id')
+[2023-04-18T18:29:10.871] [ERROR] default - Error al buscar el carrito TypeError: Cannot read properties of undefined (reading 'id')
+[2023-04-18T18:29:37.287] [ERROR] default - Error al buscar el carrito TypeError: Cannot read properties of undefined (reading 'id')
+[2023-04-18T18:29:55.548] [ERROR] default - Error al buscar el carrito TypeError: Cannot read properties of undefined (reading 'id')
+[2023-04-18T18:30:25.644] [ERROR] default - Error al buscar el carrito TypeError: Cannot read properties of undefined (reading 'id')
+[2023-04-18T18:47:37.150] [ERROR] default - Error al buscar el carrito Error: Error: Hubo un error SyntaxError: Unexpected end of JSON input
+[2023-04-18T18:47:55.200] [ERROR] default - Error al buscar el carrito Error: Error: Hubo un error SyntaxError: Unexpected end of JSON input
+[2023-04-18T19:16:49.518] [ERROR] default - Error al buscar el producto Error: Error: Hubo un error CastError: Cast to ObjectId failed for value "12" (type string) at path "_id" for model "productos"
+[2023-04-18T19:18:55.192] [ERROR] default - No se encontró el usuario con el username smposse@gmail.com
+[2023-04-18T19:26:10.241] [ERROR] default - Error al buscar el carrito Error: Error: Hubo un error SyntaxError: Unexpected end of JSON input
+[2023-04-19T17:20:36.177] [ERROR] default - Error al buscar el carrito ReferenceError: cart is not defined
+[2023-04-19T17:22:00.876] [ERROR] default - Error al buscar el carrito ReferenceError: cart is not defined
+[2023-04-19T17:46:32.853] [ERROR] default - Error al buscar el carrito Error: Error: Hubo un error CastError: Cast to ObjectId failed for value "deleteUserCart" (type string) at path "_id" for model "carritos"

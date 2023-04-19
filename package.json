@@ -5,20 +5,12 @@
   "main": "server.js",
   "type": "module",
   "scripts": {
-    "test-user": "mocha src/test/userTests.js --exit",
-    "test-products": "mocha src/test/productTests.js --exit",
     "start": "node server.js",
     "create-tables": "node src/scripts/createTable.js",
-    "node-fork": "node server.js",
     "node-cluster": "node server.js -p 8081 -m CLUSTER",
     "forever": "forever start server.js -p 8081",
-    "babel-node": "babel server.js -o src/index.js",
     "pm2-fork": "pm2 start src/index.js -p 8081",
-    "pm2-cluster": "pm2 start src/index.js -i 0 -p 8081",
-    "nginx-node-cluster": "nodemon server.js -p 8081 -m CLUSTER",
-    "nginx-node-fork": "nodemon server.js -p 8080",
-    "axios": "node src/clienteAxios-Got/index.js",
-    "http": "node src/clienteHttp/index.js"
+    "pm2-cluster": "pm2 start src/index.js -i 0 -p 8081"
   },
   "keywords": [],
   "author": "",

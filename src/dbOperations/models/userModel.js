@@ -19,7 +19,7 @@ const userSchema = new mongoose.Schema({
   },
   direccion: {
     type: String,
-    require: true,
+    required: true,
   },
   edad: {
     type: Number,
@@ -32,6 +32,9 @@ const userSchema = new mongoose.Schema({
   fotoUrl: {
     type: String,
     required: true,
+  },
+  permission: {
+    type: String,
   },
 });
 

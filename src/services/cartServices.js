@@ -26,6 +26,14 @@ export const getOneCart = async (id) => {
   }
 };
 
+export const getCartByUserId = async (id) => {
+  try {
+    return await CartDaoContainer.getByUserId(id);
+  } catch (error) {
+    throw new Error(error);
+  }
+};
+
 export const updateCart = async (body, id) => {
   try {
     return await CartDaoContainer.updateById(body, id);

@@ -1,6 +1,5 @@
 import { getApiDao } from "../dbOperations/index.js";
 import { convertToDto } from "../dbOperations/dtos/userDto.js";
-import { UserValidation } from "../dbOperations/validations/userValidations.js";
 
 const { UsersDaoContainer } = await getApiDao(process.env.DBTYPE);
 
@@ -26,7 +25,6 @@ export const getOneUser = async (id) => {
 
 export const saveUser = async (body) => {
   try {
-    UserValidation.validateUser(body, true);
     return await UsersDaoContainer.save(body);
   } catch (error) {
     throw new Error(error);

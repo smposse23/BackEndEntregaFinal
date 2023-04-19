@@ -8,11 +8,11 @@ const messagesSchema = new mongoose.Schema(
   {
     username: {
       type: String,
-      require: true,
+      required: true,
     },
     message: {
       type: String,
-      require: true,
+      required: true,
     },
   },
   {

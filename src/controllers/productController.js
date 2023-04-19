@@ -57,8 +57,14 @@ export const deleteOneProductController = async (req, res) => {
     res.status(200).json({ message: response });
     res.send(`Producto eliminado: ${response}`);
   } catch (error) {
-    logger.error(`Error al eliminar producto ${error}`);
-    res.status(400).json({ message: `Error al eliminar producto ${error}` });
+    logger.error(
+      `Error. No se puede eliminar el producto, ya que el mismo no existe.`
+    );
+    res
+      .status(400)
+      .json(
+        `Error. No se puede eliminar el producto, ya que el mismo no existe.`
+      );
   }
 };
 

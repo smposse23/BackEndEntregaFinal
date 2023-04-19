@@ -13,6 +13,16 @@ class MongoContainer {
     }
   }
 
+  async getByUserId(id) {
+    try {
+      const response = await this.model.find({ userId: id });
+      const data = JSON.parse(JSON.stringify(response)); //convertir a formato json
+      return data;
+    } catch (error) {
+      throw new Error(`Hubo un error ${error}`);
+    }
+  }
+
   async getAll() {
     try {
       const response = await this.model.find();
